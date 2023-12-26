@@ -3,9 +3,17 @@
   "version": "1.0.0",
   "description": "a blog that follows along my web dev journey and fun things in-between",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+	"scripts": {
+		"start": "node server/server.js",
+		"develop": "concurrently \"cd server && npm run start\" \"cd client && npm run dev\"",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"seed": "cd server && npm run seed",
+		"install": "cd server && npm i && cd ../client && npm i",
+		"build": "cd client && npm run build"
+	},
   "author": "PJ",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
 }
