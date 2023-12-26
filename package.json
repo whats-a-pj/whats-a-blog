@@ -1,0 +1,11 @@
+{
+  "name": "whats-a-blog",
+  "version": "1.0.0",
+  "description": "a blog that follows along my web dev journey and fun things in-between",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PJ",
+  "license": "ISC"
+}
